@@ -1,0 +1,21 @@
+# SAM3 Testing Requirements for Raspberry Pi 5
+
+# Core dependencies
+torch>=2.0.0
+transformers>=4.50.0
+pillow>=10.0.0
+accelerate>=0.20.0
+
+# Image processing
+matplotlib>=3.7.0
+numpy>=1.24.0
+
+# Video processing
+av>=10.0.0
+opencv-python>=4.8.0
+
+# Optional: For better performance monitoring
+psutil>=5.9.0
+
+# Optional: For webcam support
+# picamera2  # Uncomment if using Pi Camera
