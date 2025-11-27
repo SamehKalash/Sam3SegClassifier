@@ -9,7 +9,7 @@ print("🚀 SAM3 Quick Test - Starting...")
 print("\n1️⃣ Importing libraries...")
 try:
     import torch
-    from transformers import Sam3Model, Sam3Processor
+    from transformers import Sam3Processor, Sam3Model
     from PIL import Image
     import requests
     print("   ✓ All libraries imported successfully")
@@ -27,8 +27,9 @@ print(f"   Using: {device}")
 print("\n3️⃣ Loading SAM3 model...")
 print("   (This takes a few minutes on first run)")
 try:
-    model = Sam3Model.from_pretrained("facebook/sam3").to(device)
+    model = Sam3Model.from_pretrained("facebook/sam3")
     processor = Sam3Processor.from_pretrained("facebook/sam3")
+
     print("   ✓ Model loaded!")
 except Exception as e:
     print(f"   ❌ Error loading model: {e}")
